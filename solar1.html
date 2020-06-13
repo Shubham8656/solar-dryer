@@ -1,0 +1,149 @@
+<!doctype html><html><head><style type="text/css" id="dcoder_stylesheet">.container{
+  margin:auto;
+  margin-top:0px;
+  width:100%;
+  height:1000px;
+  background-color:pink;
+  display:flex;
+  flex-direction:column;
+}
+#butt{
+  margin-bottom:3px;
+  padding: 5px;
+  
+}
+#butt:hover{
+  background-color:blue;
+  color:white;
+}
+
+.input{
+  color: blue;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.output{
+  color: green;
+  margin-top:10px;
+  font-weight:20px;
+  font-size:25px;
+}</style></head> 
+ <body> 
+  <div class="container"> 
+   <h1>Calculation of drying time</h1> 
+   <p>select the type of product you want to dry</p> 
+   <button id="butt" onclick="buttonclick1()">Grape</button> 
+   <button id="butt" onclick="buttonclick2()">Potato</button> 
+   <button id="butt" onclick="buttonclick3()" ">Chilli</button> 
+   <button id="butt" onclick="buttonclick4()">Onion</button> 
+   <button id="butt" onclick="buttonclick5()">Apple</button> 
+   <button id="butt" onclick="buttonclick6()">Banana</button> 
+   <button id="butt" onclick="buttonclick7()">Carrot</button> 
+   <button id="butt" onclick="buttonclick8()">Coffee</button> 
+   <button id="butt" onclick="buttonclick9()">Garlic</button> 
+   <button id="butt" onclick="buttonclick10()">Yam</button> 
+  
+   <div class="input"></div> 
+   <div class="output"></div> 
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">let mi,mf;
+let buttonclick1=()=>{
+  mi=89.4;
+  mf=10;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let kg= ()=>{
+ let pmass = document.querySelector("#mass").value
+ 
+let mm=(mi - mf)/(100-mf)
+
+let mw=mm*pmass
+
+let td=mw/1.5
+document.querySelector(".output").innerHTML=`<div>Approximate time required : ${td} hrs</div>`
+}
+
+let buttonclick2=()=>{
+  mi=75;
+  mf=13;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+let buttonclick3=()=>{
+  mi=80;
+  mf=10;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let buttonclick4=()=>{
+  mi=82;
+  mf=4;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let buttonclick5=()=>{
+  mi=85;
+  mf=18;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let buttonclick6=()=>{
+  mi=80;
+  mf=15;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let buttonclick7=()=>{
+  mi=70;
+  mf=5;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let buttonclick8=()=>{
+  mi=80;
+  mf=20;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let buttonclick9=()=>{
+  mi=80;
+  mf=4;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}
+
+let buttonclick10=()=>{
+  mi=80;
+  mf=8;
+  console.log("hiiii")
+  let inp=`<label>Enter the mass of product<input onChange="kg()" type="number" id="mass">(kg)</label>`
+  document.querySelector(".input").innerHTML=inp
+
+}</script></body></html>
