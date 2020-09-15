@@ -1,8 +1,9 @@
 .container{
-    background-color: black;
+    background-color: rgb(219, 203, 203);
     display: flex;
     flex-direction: column;
 }
+
 .container h1{
     margin-left: 35%;
     color: rgb(172, 172, 240);
@@ -36,4 +37,59 @@
 }
 .container .output{
     color: rgb(139, 241, 139);
+}
+@media screen and (min-width:400px){
+    .container{
+        background-color: rgb(243, 241, 217);
+        height: 1520px;
+        justify-content: center;
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container h1{
+        /* margin-left: 35%; */
+        color: rgb(245, 70, 216);
+        margin: auto;
+        font-size: 70px;
+    }
+    .container h2 {
+        color:rgb(7, 2, 10);
+        /* margin: auto; */
+        font-size: 50px;
+    }
+    #butt{
+        /* position: absolute; */
+        /* position: relative; */
+        width: 90%;
+        height: 10px;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        border: 1px solid red;
+        margin-left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        /* height: 5%; */
+        /* left: 20%; */
+        background-color: rgb(238, 120, 107);
+        color: black;
+        padding: 5%;
+        /* left: 0%; */
+
+        /* margin-bottom: 10px; */
+        /* font-size: 70%; */
+   }
+     #mass{ 
+        height: 30px;
+        font-size: 20px;
+        /* font-weight: 200px; */
+        color: brown;
+    }
+    .container .output{
+        color: rgb(139, 241, 139);
+    }   
+    .input{
+        height: 40px;
+    }
 }
